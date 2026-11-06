@@ -483,7 +483,7 @@ def main():
         root.attributes("-toolwindow", True)  # no taskbar button, hidden from Alt+Tab
     root.attributes("-alpha", 0.95)
 
-    key = "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"
+    key = "#EnterKeyHere"
     # short timeout + no SDK retries, so a stuck or rate-limited model fails
     # fast and the next model in LLM_MODELS takes over
     client = Groq(api_key=key, timeout=20.0, max_retries=0) if key else None
